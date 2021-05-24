@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Elements Test(failed)">
+    <classes>
+      <class name="com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="savingData"/>
+        </methods>
+      </class> <!-- com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest -->
+    </classes>
+  </test> <!-- Elements Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

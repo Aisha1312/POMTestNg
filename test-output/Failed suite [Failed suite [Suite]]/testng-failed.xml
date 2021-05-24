@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Suite]]]">
+  <test thread-count="5" name="Elements Test(failed)(failed)(failed)" parallel="methods">
+    <classes>
+      <class name="com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest">
+        <methods>
+          <include name="validatecheckBoxOptionsDescription" invocation-numbers="0 1 2"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest -->
+      <class name="com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest">
+        <methods>
+          <include name="isEmailBoxHighlighted"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest -->
+    </classes>
+  </test> <!-- Elements Test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Suite]]] -->
