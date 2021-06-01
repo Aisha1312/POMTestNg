@@ -24,7 +24,7 @@ public class TestBase {
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
-	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal();
+	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<WebDriver>();
 
 	public TestBase() {
 		prop = new Properties();

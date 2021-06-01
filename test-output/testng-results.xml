@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="41607" started-at="2021-05-23T18:33:01Z" finished-at="2021-05-23T18:33:42Z">
+  <suite name="Suite" duration-ms="43980" started-at="2021-06-01T06:17:52Z" finished-at="2021-06-01T06:18:36Z">
     <groups>
     </groups>
-    <test name="Elements Test" duration-ms="41607" started-at="2021-05-23T18:33:01Z" finished-at="2021-05-23T18:33:42Z">
+    <test name="Elements Test" duration-ms="43980" started-at="2021-06-01T06:17:52Z" finished-at="2021-06-01T06:18:36Z">
       <class name="com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@6eebc39e]" name="setUp" is-config="true" duration-ms="10445" started-at="2021-05-23T18:33:01Z" finished-at="2021-05-23T18:33:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@5702b3b1]" name="setUp" is-config="true" duration-ms="15462" started-at="2021-06-01T06:17:54Z" finished-at="2021-06-01T06:18:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateInvalidSavingData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@6eebc39e]" name="validateInvalidSavingData" duration-ms="1217" started-at="2021-05-23T18:33:12Z" data-provider="getElementsTestData" finished-at="2021-05-23T18:33:13Z">
+        <test-method status="PASS" signature="validateInvalidSavingData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@5702b3b1]" name="validateInvalidSavingData" duration-ms="2085" started-at="2021-06-01T06:18:09Z" data-provider="getElementsTestData" finished-at="2021-06-01T06:18:11Z">
           <params>
             <param index="0">
               <value>
@@ -47,15 +47,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateInvalidSavingData -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@6eebc39e]" name="teardown" is-config="true" duration-ms="869" started-at="2021-05-23T18:33:13Z" finished-at="2021-05-23T18:33:14Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@5702b3b1]" name="teardown" is-config="true" duration-ms="1031" started-at="2021-06-01T06:18:11Z" finished-at="2021-06-01T06:18:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@6eebc39e]" name="setUp" is-config="true" duration-ms="10607" started-at="2021-05-23T18:33:14Z" finished-at="2021-05-23T18:33:24Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@5702b3b1]" name="setUp" is-config="true" duration-ms="10304" started-at="2021-06-01T06:18:12Z" finished-at="2021-06-01T06:18:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateSavingData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@6eebc39e]" name="validateSavingData" duration-ms="1223" started-at="2021-05-23T18:33:24Z" data-provider="getElementsTestData" finished-at="2021-05-23T18:33:26Z">
+        <test-method status="PASS" signature="validateSavingData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@5702b3b1]" name="validateSavingData" duration-ms="1602" started-at="2021-06-01T06:18:22Z" data-provider="getElementsTestData" finished-at="2021-06-01T06:18:24Z">
           <params>
             <param index="0">
               <value>
@@ -91,15 +91,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSavingData -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@6eebc39e]" name="teardown" is-config="true" duration-ms="778" started-at="2021-05-23T18:33:26Z" finished-at="2021-05-23T18:33:26Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@5702b3b1]" name="teardown" is-config="true" duration-ms="703" started-at="2021-06-01T06:18:24Z" finished-at="2021-06-01T06:18:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@6eebc39e]" name="setUp" is-config="true" duration-ms="13235" started-at="2021-05-23T18:33:26Z" finished-at="2021-05-23T18:33:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@5702b3b1]" name="setUp" is-config="true" duration-ms="8468" started-at="2021-06-01T06:18:25Z" finished-at="2021-06-01T06:18:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatesearchData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@6eebc39e]" name="validatesearchData" duration-ms="1542" started-at="2021-05-23T18:33:40Z" data-provider="getElementsTestData" finished-at="2021-05-23T18:33:41Z">
+        <test-method status="PASS" signature="validatesearchData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@5702b3b1]" name="validatesearchData" duration-ms="1666" started-at="2021-06-01T06:18:33Z" data-provider="getElementsTestData" finished-at="2021-06-01T06:18:35Z">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatesearchData -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@6eebc39e]" name="teardown" is-config="true" duration-ms="941" started-at="2021-05-23T18:33:41Z" finished-at="2021-05-23T18:33:42Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@5702b3b1]" name="teardown" is-config="true" duration-ms="797" started-at="2021-06-01T06:18:35Z" finished-at="2021-06-01T06:18:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
