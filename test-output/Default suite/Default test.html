@@ -1,0 +1,469 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>28/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 18 21:35:41 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>415 seconds (415243 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest.isEmailBoxHighlighted()'><b>isEmailBoxHighlighted</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1078, 639). Other element would receive the click: &lt;iframe frameborder=&quot;0&quot; src=&quot;https://5571fb93a127f05db8bf575a75ba1ead.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html&quot; id=&quot;google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0&quot; title=&quot;3rd party ad content&quot; name=&quot;&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;728&quot; height=&quot;90&quot; data-is-safeframe=&quot;true&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; allow=&quot;conversion-measurement&quot; data-google-container-id=&quot;1&quot; style=&quot;border: 0px; vertical-align: bottom;&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:03.216Z&apos;
+System info: host: &apos;DESKTOP-9S87ER3&apos;, ip: &apos;192.168.1.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\ROOHIA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55902}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f773f6048f885b62d8eb755c0b374f7e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aisha.DemoQASiteTestNG.pageClasses.ElementsTextBoxPageClass.validateEmailAddress(ElementsTextBoxPageClass.java:92)
+	at com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest.isEmailBoxHighlighted(TextBoxTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1013804211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1013804211'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1078, 639). Other element would receive the click: &lt;iframe frameborder=&quot;0&quot; src=&quot;https://5571fb93a127f05db8bf575a75ba1ead.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html&quot; id=&quot;google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0&quot; title=&quot;3rd party ad content&quot; name=&quot;&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;728&quot; height=&quot;90&quot; data-is-safeframe=&quot;true&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; allow=&quot;conversion-measurement&quot; data-google-container-id=&quot;1&quot; style=&quot;border: 0px; vertical-align: bottom;&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T15:15:03.216Z&apos;
+System info: host: &apos;DESKTOP-9S87ER3&apos;, ip: &apos;192.168.1.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\ROOHIA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55902}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f773f6048f885b62d8eb755c0b374f7e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.aisha.DemoQASiteTestNG.pageClasses.ElementsTextBoxPageClass.validateEmailAddress(ElementsTextBoxPageClass.java:92)
+	at com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest.isEmailBoxHighlighted(TextBoxTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest@5f9d02cb</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest.validateBrokenLink()'><b>validateBrokenLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest</td>
+<td><div><pre>java.lang.AssertionError: expected [http://the-internet.herokuapp.com/status_codes/500] but found [https://demoqa.com/broken]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest.validateBrokenLink(BrokenLinksTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace463215441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace463215441'><pre>java.lang.AssertionError: expected [http://the-internet.herokuapp.com/status_codes/500] but found [https://demoqa.com/broken]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest.validateBrokenLink(BrokenLinksTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest@13a5fe33</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest.validateClickMethod()'><b>validateClickMethod</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest</td>
+<td><div><pre>java.lang.AssertionError: expected [You have done a dynamic click] but found [Not displayed]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest.validateClickMethod(ButtonTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1829287142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1829287142'><pre>java.lang.AssertionError: expected [You have done a dynamic click] but found [Not displayed]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest.validateClickMethod(ButtonTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest@370736d9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest.isElementsCardClickable()'><b>isElementsCardClickable</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest@6b09bb57</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest.isElementsCardClickable()'><b>isElementsCardClickable</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest@5f9d02cb</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest.isTextBoxOptionClickable()'><b>isTextBoxOptionClickable</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest@5f9d02cb</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest.savingData()'><b>savingData</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@63753b6d</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.LinksTest.validateBadRequestLink()'><b>validateBadRequestLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.LinksTest</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.LinksTest@6536e911</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest.validateBrokenImage()'><b>validateBrokenImage</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest</td>
+<td></td>
+<td>2</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest@13a5fe33</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.LinksTest.validateCreatedLink()'><b>validateCreatedLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.LinksTest</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.LinksTest@6536e911</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest.validateDoubleClickMethod()'><b>validateDoubleClickMethod</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest@370736d9</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.LinksTest.validateForbiddenLink()'><b>validateForbiddenLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.LinksTest</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.LinksTest@6536e911</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.LinksTest.validateHomeLink()'><b>validateHomeLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.LinksTest</td>
+<td></td>
+<td>3</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.LinksTest@6536e911</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.LinksTest.validateHomepvlkLink()'><b>validateHomepvlkLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.LinksTest</td>
+<td></td>
+<td>2</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.LinksTest@6536e911</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.RadioTest.validateImpressiveRadioButton()'><b>validateImpressiveRadioButton</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.RadioTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.RadioTest@3108bc</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest.validateInvalidSavingData()'><b>validateInvalidSavingData</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest<br>Parameters: Aisha, R, 24.0, aisha@tabass@gmail.com, 1000.0, LIC</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@63753b6d</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.LinksTest.validateMovedLink()'><b>validateMovedLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.LinksTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.LinksTest@6536e911</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.RadioTest.validateNORadioButton()'><b>validateNORadioButton</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.RadioTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.RadioTest@3108bc</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.LinksTest.validateNoContentLink()'><b>validateNoContentLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.LinksTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.LinksTest@6536e911</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.LinksTest.validateNotFoundLink()'><b>validateNotFoundLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.LinksTest</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.LinksTest@6536e911</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest.validateRightClickMethod()'><b>validateRightClickMethod</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.ButtonTest@370736d9</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest.validateSavingData()'><b>validateSavingData</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest<br>Parameters: Aisha, R, 24.0, aisha@tabass@gmail.com, 1000.0, LIC</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@63753b6d</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.LinksTest.validateUnauthorisedLink()'><b>validateUnauthorisedLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.LinksTest</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.LinksTest@6536e911</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest.validateValidImage()'><b>validateValidImage</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest</td>
+<td></td>
+<td>2</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest@13a5fe33</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest.validateValidLink()'><b>validateValidLink</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest</td>
+<td></td>
+<td>2</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.BrokenLinksTest@13a5fe33</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.RadioTest.validateYESRadioButton()'><b>validateYESRadioButton</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.RadioTest</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.RadioTest@3108bc</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest.validatecheckBoxOptionsDescription()'><b>validatecheckBoxOptionsDescription</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest<br>Parameters: Home</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest@6b09bb57</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest.validatecheckBoxOptionsDescription()'><b>validatecheckBoxOptionsDescription</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest<br>Parameters: Desktop</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest@6b09bb57</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest.validatecheckBoxOptionsDescription()'><b>validatecheckBoxOptionsDescription</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest<br>Parameters: Documents</td>
+<td></td>
+<td>0</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.CheckBoxTest@6b09bb57</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest.validatesearchData()'><b>validatesearchData</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest<br>Parameters: Aisha, R, 24.0, aisha@tabass@gmail.com, 1000.0, LIC</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest@63753b6d</td></tr>
+<tr>
+<td title='com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest.verifyElementsForm()'><b>verifyElementsForm</b><br>Test class: com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest<br>Parameters: Aisha, aishatabass@gmail.com, 13/189, Flat no-7, Akash Apts., S.V.Lingam Road, K.K.Nagar Chennai-78, 13/189, Flat no-7, Akash Apts., S.V.Lingam Road, K.K.Nagar Chennai-78</td>
+<td></td>
+<td>1</td>
+<td>com.aisha.DemoQASiteTestNG.TestClasses.TextBoxTest@5f9d02cb</td></tr>
+</table><p>
+</body>
+</html>

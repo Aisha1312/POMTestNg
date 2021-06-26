@@ -10,6 +10,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
@@ -47,33 +49,24 @@ public class TestBase {
 		String browser = prop.getProperty("browser");
 
 		if (browser.equalsIgnoreCase("Chrome")) {
-			//System.setProperty("webdriver.chrome.driver", "C:\\work\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\work\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
 			tldriver.set(new ChromeDriver());
 		}
 		else if(browser.equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
-			tldriver.set(new FirefoxDriver()); 
 		}
 
 		getDriver().manage().deleteAllCookies();
 		getDriver().get(url);
 		getDriver().manage().window().maximize();
-
-		// e_driver = new EventFiringWebDriver(driver);
-		// eventListener = new WebEventListener();
-		// e_driver.register(eventListener);
-		// driver = e_driver;
-
 		getDriver().manage().deleteAllCookies();
 		getDriver().manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		getDriver().manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
 		JavascriptExecutor js = ((JavascriptExecutor)getDriver());
 		js.executeScript("window.scrollBy(0,600)");
-		
-		
 		
 	}
 	public static synchronized WebDriver getDriver() {

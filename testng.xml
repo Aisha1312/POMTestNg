@@ -6,13 +6,19 @@
 	</listeners>
 	<test name="Elements Test">
 		<classes>
-			<class
+			<!-- <class
 			    name="com.aisha.DemoQASiteTestNG.TestClasses.WebTableTest">
 			    <methods>
 			        <exclude 
 			            name= "savingData"/>
 			    </methods>
-			</class>
+			</class> -->
+			<!-- <class
+			    name="com.aisha.DemoQASiteTestNG.TestClasses.LinksTest">
+			</class> -->
+			<class
+			    name="com.aisha.DemoQASiteTestNG.TestClasses.DynamicPropertiesTest">
+			</class> 
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
