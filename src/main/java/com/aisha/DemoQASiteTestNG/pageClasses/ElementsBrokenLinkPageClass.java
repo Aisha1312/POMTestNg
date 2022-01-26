@@ -48,7 +48,7 @@ public class ElementsBrokenLinkPageClass extends TestBase{
 		Boolean ImagePresent = (Boolean) ((JavascriptExecutor)TestBase.getDriver())
 				.executeScript("return arguments[0].complete"+ 
 		                       "&& typeof arguments[0].naturalWidth != \"undefined\""+
-						       "&& arguments[0].naturalWidth > 0",validImage);
+					       "&& arguments[0].naturalWidth > 0",validImage);
 		System.out.println(ImagePresent);
 		if (!ImagePresent)
         {
